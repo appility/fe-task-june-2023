@@ -93,28 +93,3 @@ const Users = () => {
 }
 
 export default Users
-
-
-
-    // queryClient.setQueryData(
-    //     ['users', { id }],
-    //     // ✅ this is the way
-    //     (oldData) => oldData ? {
-    //       ...oldData,
-    //       title: 'my new post title'
-    //     } : oldData
-    //   )
-
-    //   useMutation(({id}) => {
-    //     mutationFn: updateProfile,
-    //     // When mutate is called:
-        
-    //     // If the mutation fails, use the context returned from onMutate to roll back
-    //     onError: (err, { id }, context) => {
-    //       queryClient.setQueryData(['tasks', id], context.previousTasks)
-    //     },
-    //     // Always refetch after error or success:
-    //     onSettled: (newData, error, { id }) => {
-    //       queryClient.invalidateQueries(['tasks', id])
-    //     },
-    //   })
